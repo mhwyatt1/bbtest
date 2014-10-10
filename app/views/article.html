@@ -1,1 +1,12 @@
-<p>This is the article view.</p>
+<div class="modal-header">
+    <span ng-click="cancel()" class="close glyphicon glyphicon-remove pull-right"></span>
+    <h3 class="modal-title" ng-bind-html="article.title"></h3>
+</div>
+<div class="modal-body">
+    <img class="pull-right article-image" ng-src="{{ article['media:content'].url }}">
+    <p class="article-body" ng-bind-html="article.description"></p>
+    <p class="article-date">{{ article.pubDate }}</p>
+</div>
+<div class="modal-footer">
+    <a href="{{ article.link }}" class="btn btn-primary btn-sm" role="button">Go to article <span class="glyphicon glyphicon-link"></span></a>
+</div>

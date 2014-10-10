@@ -22,18 +22,13 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About Us</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">yapipes</h3>
+        <h1><span class="glyphicon glyphicon-tasks"></span>NewsPipe</h1>
       </div>
 
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-pencil"></span> by mhwyatt</p>
       </div>
     </div>
 
@@ -60,6 +55,12 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
@@ -72,20 +73,15 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/article.js"></script>
+        <script src="scripts/controllers/modal.js"></script>
+        <script src="scripts/services/yahoopipe.js"></script>
         <!-- endbuild -->
 </body>
 </html>
